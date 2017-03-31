@@ -5,29 +5,29 @@
 
 ## 项目结构
 	>app      	      
-	>>__init__.py  app初始化
+	>>__init__.py		app初始化
 	
-	>>auth			登录蓝本
-	>>>__init__.py	创建登录蓝图
-	>>>forms.py		创建登录表单类，包括LoginForm，RegistrationForm
-	>>>views.py		创建登录视图，包括login()，loginout()，register()，confire()
+	>>auth				登录蓝本
+	>>>__init__.py		创建登录蓝图
+	>>>forms.py			创建登录表单类，包括LoginForm，RegistrationForm
+	>>>views.py			创建登录视图，包括login()，loginout()，register()，confire()
 
-	>>decorators.py	定义一个permission的装饰器
-	>>email.py		定义异步发送邮件函数，主要用于注册时的邮件确认
+	>>decorators.py		定义一个permission的装饰器
+	>>email.py			定义异步发送邮件函数，主要用于注册时的邮件确认
 
-	>>main			主页蓝本
-	>>>__init__.py	创建主页蓝本
-	>>>error.py		定义访问错误的http状态码
-	>>>forms.py		主页表单，包括EditProfileForm，EditProfileAdminForm，PostForm，CommentForm
-	>>>views.py		主页视图，index()，post(id)，edit(id)，delete(id)，edit_profile()等
+	>>main				主页蓝本
+	>>>__init__.py		创建主页蓝本
+	>>>error.py			定义访问错误的http状态码
+	>>>forms.py			主页表单，包括EditProfileForm，EditProfileAdminForm，PostForm，CommentForm
+	>>>views.py			主页视图，index()，post(id)，edit(id)，delete(id)，edit_profile()等
 	
-	>>models.py		定义数据库的类，主要包括用户类User,角色类Role,博客类Post和评论类Comment
+	>>models.py			定义数据库的类，主要包括用户类User,角色类Role,博客类Post和评论类Comment
 
-	>>static		静态视图
+	>>static			静态视图
 	>>>favicon.ico
 
-	>>templates		模板主目录
-	>>>403.html 	返回http状态码
+	>>templates			模板主目录
+	>>>403.html			返回http状态码
 	>>>404.html
 	>>>500.html
 	>>>_comments.html	显示评论子模板
@@ -43,13 +43,13 @@
 	>>>post.html		个人博客或单篇博客显示主模块
 	>>>user.html		用户信息显示模块
 
-	>config.py  配置文件,设置工作状态和邮件信息和常量的设置
+	>config.py			配置文件,设置工作状态和邮件信息和常量的设置
 
-	>data-dev.sqlite Flask—SALAchemy数据库
+	>data-dev.sqlite	Flask—SALAchemy数据库
 	
-	>manage.py	 程序启动模块
+	>manage.py			程序启动模块
 	
-	>migrations  数据库迁移仓库
+	>migrations			数据库迁移仓库
 	
     
 
